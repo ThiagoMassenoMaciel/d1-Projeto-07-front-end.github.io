@@ -1,0 +1,30 @@
+//Chalenge 1 
+
+Create a function to become reaction after the event click on key Enter
+this reaction is equal when the user play the button PlayAgain
+
+and named this function out of .addEventListener()
+
+
+###RESPONSE###
+    document.addEventListener('keyup', function(o){
+      console.log("Object_Event_Details \,"+o);
+      console.log(".key "+o.key)
+
+      if(o.key == 'Enter' && screen1.classList.contains('hide')){
+        PlayAgain(); // Just execute if the display are on the second screen ---> thisis a moment that screen1 are display : none ;
+      }
+    })
+
+    #####this is really RESPONSE########
+
+          document.addEventListener('keyup', callfunction_Challenge_01)
+          
+          function callfunction_Challenge_01(o){
+            console.log("Object_Event_Details \,"+o);
+            console.log(".key "+o.key)
+
+            if(o.key == 'Enter' && screen1.classList.contains('hide')){
+              PlayAgain(); // Just execute if the display are on the second screen ---> thisis a moment that screen1 are display : none ;
+            }
+          }
